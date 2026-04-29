@@ -2,6 +2,8 @@ name: FreeMCHost-Renew
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '27 */2 * * *'   # 每2小时自动运行
   
 jobs:
   run_freemchost_renew:
